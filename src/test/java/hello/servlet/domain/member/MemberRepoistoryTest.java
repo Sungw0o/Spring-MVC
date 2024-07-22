@@ -1,18 +1,16 @@
 package hello.servlet.domain.member;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemberRepoistoryTest {
 
-    MemberRepoistory memberRepoistory = MemberRepoistory.getInstance();
+    MemberRepository memberRepoistory = MemberRepository.getInstance();
 
     @AfterEach
     void afterEach(){

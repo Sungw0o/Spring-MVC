@@ -1,6 +1,6 @@
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page import="java.util.List" %>
-<%@ page import="hello.servlet.domain.member.MemberRepoistory" %><%--
+<%@ page import="hello.servlet.domain.member.MemberRepository" %><%--
   Created by IntelliJ IDEA.
   User: 성우
   Date: 24. 6. 30.
@@ -9,7 +9,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    MemberRepoistory memberRepoistory = MemberRepoistory.getInstance();
+    MemberRepository memberRepoistory = MemberRepository.getInstance();
     List<Member> members = memberRepoistory.findAll();
 %>
 <html>
